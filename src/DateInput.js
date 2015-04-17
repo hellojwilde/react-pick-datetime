@@ -125,6 +125,7 @@ var DateInput = React.createClass({
           value={this.state.inputValue}
           onFocus={this.handleInputFocus}
           onBlur={this.handleInputBlur}
+          onClick={this.handleButtonClick}
           onChange={this.handleInputChange}>
           <CalendarComponent 
             buttonComponent={buttonComponent}
