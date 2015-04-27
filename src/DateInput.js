@@ -138,10 +138,6 @@ var DateInput = React.createClass({
             value={value}
           />
         </InputWithPopup>
-        <CalendarToggleButton
-          aria-hidden="true" 
-          onClick={this.handleButtonClick}
-        />
       </div>
     );
   }
