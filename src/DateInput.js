@@ -125,8 +125,8 @@ var DateInput = React.createClass({
           value={this.state.inputValue}
           onFocus={this.handleInputFocus}
           onBlur={this.handleInputBlur}
-          onChange={this.handleInputChange}
-          onClick={this.handleButtonClick}>
+          onClick={this.handleButtonClick}
+          onChange={this.handleInputChange}>
           <CalendarComponent 
             buttonComponent={buttonComponent}
             month={this.state.popupMonth}
@@ -138,10 +138,6 @@ var DateInput = React.createClass({
             value={value}
           />
         </InputWithPopup>
-        <CalendarToggleButton
-          aria-hidden="true" 
-          onClick={this.handleButtonClick}
-        />
       </div>
     );
   }
