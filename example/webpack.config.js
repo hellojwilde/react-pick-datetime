@@ -10,8 +10,15 @@ module.exports = {
 
   module: {
     loaders: [
-      {test: /\.js$/, loader: 'babel-loader?stage=0'},
-      {test: /\.css$/, loader: 'style-loader!css-loader'}
+      {
+        test: /\.js$/,
+        loader: 'babel-loader?stage=0&optional[]=runtime',
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      }
     ]
   }
 };

@@ -27,6 +27,7 @@
   "devDependencies": {
     "babel-core": "^4.7.16",
     "babel-loader": "^5.0.0",
+    "babel-runtime": "^5.8.20",
     "css-loader": "^0.9.1",
     "expect": "^1.6.0",
     "gulp": "^3.8.11",
